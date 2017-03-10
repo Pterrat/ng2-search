@@ -1,0 +1,17 @@
+<div id="morphsearch" class="morphsearch">
+	<div class="morphsearch-form">
+		<input class="morphsearch-input" type="search" [(ngModel)]="search" (ngModelChange)="searchTitle($event)" placeholder="Search..."/>
+		<button class="morphsearch-submit" type="submit">Search</button>
+	</div>
+	<div class="morphsearch-content">
+		<div class="dummy-column">
+			<h2>People</h2>
+			<a (click)="itemClick(item)" class="dummy-media-object my-animation" *ngFor="let item of _data">
+				<img class="round" [src]="item.picture">
+				<h3>{{item.title}}</h3>
+			</a>
+		</div>
+	</div><!-- /morphsearch-content -->
+	<span class="morphsearch-close"></span>
+</div><!-- /morphsearch -->
+
