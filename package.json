@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^2.4.0",
     "@angular/compiler": "^2.4.0",
@@ -42,5 +42,24 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.4.2",
     "typescript": "~2.0.0"
-  }
+  },
+  "description": "Simple morphing search in angular2",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pterrat/ng2-search.git"
+  },
+  "keywords": [
+    "morphingSearch",
+    "ng2-search",
+    "angular2",
+    "search",
+    "morphing",
+    "search"
+  ],
+  "author": "Pierre Terrat",
+  "bugs": {
+    "url": "https://github.com/Pterrat/ng2-search/issues"
+  },
+  "homepage": "https://github.com/Pterrat/ng2-search#readme"
 }
