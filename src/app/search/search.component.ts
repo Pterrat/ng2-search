@@ -11,14 +11,17 @@ export class SearchComponent implements OnInit {
 
     public _data: Array<any> = [];
     public _dataSaved: Array<any> = [];
-
+    public _columns: Array<any> = [];
 
 	public searchTitle(newValue:any){
-		console.log(newValue);
-
-		this._data = this._dataSaved.filter(d => d.title.indexOf(newValue) != -1);
+      this._data =  this._dataSaved.filter(v => v.title.indexOf(newValue) != -1);
 	}
 
+    @Input()
+    public set columns(columns: any) {
+      this._columns = columns;
+      console.log(this._columns);
+    }
 
     @Input()
     public set data(data: any) {

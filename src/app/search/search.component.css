@@ -211,10 +211,10 @@ input[type="search"] { /* reset normalize */
 .morphsearch-content {
 	color: #333;
 	margin-top: 4.5em;
-	width: 100%;
+	width: 80%;
 	height: 0;
 	overflow: hidden;
-	padding: 0 10.5%;
+	padding: 0 10%;
 	background: #f1f1f1;
 	position: absolute;
 	pointer-events: none;

@@ -4,9 +4,9 @@
 		<button class="morphsearch-submit" type="submit">Search</button>
 	</div>
 	<div class="morphsearch-content">
-		<div class="dummy-column">
-			<h2>People</h2>
-			<a (click)="itemClick(item)" class="dummy-media-object my-animation" *ngFor="let item of _data">
+		<div class="dummy-column" *ngFor="let column of _columns">
+			<h2>{{column}}</h2>
+			<a (click)="itemClick(item)" class="dummy-media-object my-animation" *ngFor="let item of _data | filter : 'type' : column ">
 				<img class="round" [src]="item.picture">
 				<h3>{{item.title}}</h3>
 			</a>
